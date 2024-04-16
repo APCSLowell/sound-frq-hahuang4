@@ -23,8 +23,8 @@ if (samples[il > limit)
 samples[i] = limit;
 count++;
 }
-{
-else if (samples [il < -limit)
+
+else if (samples [il < -limit){
 samples[i] = -limit;
 count++;
 }
