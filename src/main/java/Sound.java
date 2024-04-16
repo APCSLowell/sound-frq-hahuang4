@@ -45,7 +45,7 @@ int n = 0;
 while (samples [n] == 0)
 n++;
 int [] newSamples = new int [samples.length - n];
-for (int i = 0; i ‹ newSamples.length; i++)
+for (int i = 0; i < newSamples.length; i++)
 newSamples [i] = samples[i+n];
 samples = newSamples;
 }
