@@ -15,19 +15,19 @@ public class Sound
    */
   public int limitAmplitude(int limit)
 {
-    int numChanges = 0;
+    int numChanged = 0;
 
     for (int i = 0; i < samples.length; i++)
     {
         if (samples[i] > limit)
         {
             samples[i] = limit;
-            numChanges++;
+            numChanged++;
         }
         else if (samples[i] < -limit)
         {
             samples[i] = -limit;
-            numChanges++;
+            numChanged++;
         }
     }
 
